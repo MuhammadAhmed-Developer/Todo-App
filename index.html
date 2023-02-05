@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- tostify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">My TodoApp</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                </ul>
+                 <h5 class="text-white">Hi! User</h5>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+     
+    <main>
+        <section>
+            <div class="container p-5">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1>Add Your Task</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container bg-light p-3  form">
+            <div class="row ">
+                <div class="row m-2 text-center">
+                    <form action="" onsubmit="handleSubmit()">
+                    <div class="mb-2 mb-md-2">
+                      <input type="text" class="form-control " id="title" placeholder="Title">
+                    </div>
+                    <div class="">
+                      <input type="text" class="form-control" id="location" placeholder="Location" >
+                    </div>
+                    <div class="col-12">
+                        <textarea cols="30" rows="3" id="description" class="form-control mt-3"
+                            placeholder="Description"></textarea>
+                    </div>
+                    <div class="col m-2 text-center">
+                        <button class="btn btn-info col-12" id="edittask" onclick="handleUpdated()">Update Task</button>
+                        <button class="btn btn-danger col-7" id="addtask" >Add Task</button>
+                    </div>
+            </form>
+                  </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container my-5">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1>Your Tasks</h1>
+                        <div class="border border-2" id="output"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+    <footer>
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col text-center text-white p-2">
+                    <p>&copy; 2023 Muhammad Ahmed </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- tostify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Custom js -->
+    <script src="./script.js"></script>
+</body>
+</html>
